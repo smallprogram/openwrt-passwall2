@@ -304,7 +304,7 @@ jobs:
           cd sdk
           mkdir upload
 
-          zip -jr upload/passwall_packages_ipk_${{ matrix.platform }}.zip bin/packages/*/passwall_packages/
+          zip -jr upload/passwall2_packages_ipk_${{ matrix.platform }}.zip bin/packages/*/passwall_packages/
 
           echo "FIRMWARE=$PWD" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
